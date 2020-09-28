@@ -7,6 +7,6 @@ como controld e tráfico de armas y promoción del desarme. La data extraída co
 
 Variable 2) Personal militar % de la fuerza laboral (personal): Esta variable se determina al relacionar el número total de efectivos pertenecientes a las FFAA de un país, con 
 respecto a la fuerza laboral total del mismo. Considero que usar esta última variable es más pertinente que usar la población total dado que se descartan los casos de personas que
-por alguna situación no puedan formar parte de la milicia de un país. La tabla con la data pertinente fue extraída en formato Excely tiene como fuente la data de la organización
+por alguna situación no puedan formar parte de la milicia de un país. La tabla con la data pertinente fue extraída en formato Excel (Personal Militar.xls) y tiene como fuente la data de la organización
 ''The World Bank Group'', institución que tiene como fin brindar asistencia financiera así como promover la prosperidad entre países y reducir la pobreza mundial, entre otros.
 
