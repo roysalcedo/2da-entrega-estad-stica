@@ -1,0 +1,63 @@
+---
+title: "2da Entrega"
+author: '20163502'
+date: "26/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Se abre la data y detalla la primera variable
+
+```{r}
+library(rio)
+
+ejercito <- import("https://github.com/roysalcedo/2da-entrega-estad-stica/raw/master/Ejercito.xlsx")
+str(ejercito)
+summary(ejercito)
+```
+
+###Se observa la estructura de la variable
+
+```{r}
+str(ejercito)
+```
+
+###Se cambian los nombres de las columnas
+
+```{r}
+names(ejercito)=c("Pais","ejercito2016")
+```
+
+#Se abre la segunda data y segunda variable 
+
+```{r}
+pbi <- import("https://github.com/roysalcedo/2da-entrega-estad-stica/raw/master/PBI.xlsx")
+str(pbi)
+summary(pbi)
+```
+
+###Se cambian los nombres de las columnas
+
+```{r}
+names(pbi)=c("Pais","PBI2016")
+```
+
+#Se realiza el MERGE de las bases
+
+
+```{r}
+names(ejercito)
+names(pbi)
+```
+
+###Merge en base a variable en común
+#*Se realiza este tipo de merge para no tomar en cuenta países de los cuales se tiene de data una sola de las variables, en este caso se elimina Venezuela pues no se tiene un dato específico del año 2016 en cuanto al PBI
+
+```{r}
+total1=merge(ejercito,pbi,by.x='Pais', by.y='Pais') 
+head(total1)
+```
+
